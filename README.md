@@ -1,45 +1,39 @@
-# Amr Al-Feraidi — Portfolio
+# Amr Al-Feraidi — Portfolio (Version 2)
 
-A responsive, static Dark Tech portfolio for GitHub Pages, built using plain HTML, CSS and JavaScript. No build tools, frameworks, analytics, or external JavaScript libraries required.
+Responsive, static **Dark Tech** portfolio for GitHub Pages. No build, dependencies, paid hosting, or API keys.
 
-## Preview
+## What's new
 
-Open `index.html` in a browser, or run a local server from this folder:
+- Expanded technical project summaries with **Objective / Environment / Implementation / Verification**.
+- Click **Implementation & verification** on each project card to read evidence.
+- Click **View full image** for a large, accessible view of the two real GitHub project screenshots.
+- Third project's SVG is explicitly labeled as an illustration until a real screenshot is available.
+- Improved compact/mobile layouts and scrollable navigation.
+- **Download résumé** links at the top and contact section, serving `Amr_Alferaidi_Resume.pdf`.
 
-```bash
-python -m http.server 8000
-```
+## Publish update (replace earlier version)
 
-Then open http://localhost:8000.
+1. Extract this ZIP on your computer.
+2. In `https://github.com/Amr-Alferaidi/Amr-Alferaidi.github.io`, choose **Add file → Upload files**.
+3. Upload the **contents** of this folder, not the `.zip` and not an enclosing folder. Include `index.html`, `styles.css`, `script.js`, `README.md`, `Amr_Alferaidi_Resume.pdf` and the entire `assets/` directory.
+4. Approve replacing the existing files, then **Commit changes** to `main`.
+5. Confirm **Settings → Pages → Deploy from branch → main → /(root)** and wait for the latest deployment to succeed.
+6. Visit `https://amr-alferaidi.github.io/` and hard-refresh (Ctrl+F5) if the previous version is cached.
 
-## Publish on GitHub Pages
+## Maintenance
 
-1. Create a public GitHub repository named `Amr-Alferaidi.github.io` under the `Amr-Alferaidi` account. For a project-site repository with a different name, GitHub Pages will serve the portfolio at `https://amr-alferaidi.github.io/<repository-name>/`.
-2. Upload all items **inside** this folder to the root of that repository: `index.html`, `styles.css`, `script.js`, and `assets/`.
-3. In repository **Settings → Pages → Build and deployment**, select **Deploy from a branch**, choose `main` and `/(root)`, then Save.
-4. Open `https://amr-alferaidi.github.io/` after Pages reports a successful deployment. (The URL assumes the special user-site repository name.)
+- `index.html`: text, descriptions, repository links and image URLs.
+- `styles.css`: visual styles and responsive adjustments.
+- `script.js`: menu, fallback image logic and image viewer.
+- `assets/`: SVG illustrations and fallback art.
+- `Amr_Alferaidi_Resume.pdf`: replace with your final CV anytime, keeping the same filename to preserve both download buttons.
 
-## Actual project imagery
+**Privacy:** The résumé is hosted publicly and may expose the telephone number and email address printed in the PDF. Review the PDF before publishing.
 
-The Active Directory and Enterprise Network cards reference **real screenshots from the owner's GitHub repository README files** using public GitHub user-attachment URLs. Their content requires internet access. Should these images become unavailable or be blocked, local explanatory SVG fallbacks display instead. The Network Labs card uses a clearly labeled illustrative SVG rather than inventing an unverified screenshot.
+**Images:** First two screenshot URLs are direct GitHub user-attachment links (also visible in your live site), not guaranteed permanent copies; local fallback SVGs appear when those fail to load. The third project still uses a clearly disclosed diagram.
 
-For full offline support, download the two original project images from your GitHub repositories, place them in `assets/`, and replace the two remote `img src` attributes in `index.html` with the local filenames.
+© 2026 Amr Al-Feraidi.
 
-## Personalize
 
-- Update your current-employment end date after your final contractual end date is recorded.
-- If you want a Resume download button, export your **latest final PDF** to `assets/Amr_Alferaidi_CV.pdf` and add a link to it. An older draft has intentionally NOT been included as a public CV.
-- Check contact email, education, and certification details before publishing.
-- All links open in separate tabs where appropriate. Email opens a mail application.
-- Project descriptions distinguish independent labs from company responsibilities.
-
-## Files
-
-- `index.html`: content and semantic structure.
-- `styles.css`: responsive layout and dark theme.
-- `script.js`: mobile nav, fallback image behavior, copyright year.
-- `assets/`: local fallback diagrams and favicon.
-
-## Privacy
-
-No analytics, visitor tracking, forms, or cookies are included.
+## V3 layout update
+Upload BOTH `index.html` and `styles.css` to the root of the repository. CSS URL is versioned (`styles.css?v=3`) to bypass cached styles. Feature row spanning removed and three independent cards shown on wide screens, two on medium screens, one on mobile.
