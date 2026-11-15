@@ -89,3 +89,35 @@
 #projects .project-card .tags {margin-top:12px;}
 @media(max-width:1050px){#projects .projects-grid{columns:2 280px;}}
 @media(max-width:720px){#projects .projects-grid{columns:1;max-width:610px;margin-inline:auto;}}
+
+/* Portfolio project layout: ordered 2x2 grid on desktop, single column on mobile.
+   Append this block at the very end of styles.css, after the V3.1 masonry rules. */
+#projects .projects-grid {
+  display: grid !important;
+  columns: auto !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  grid-auto-flow: row !important;
+  grid-auto-rows: auto !important;
+  gap: 22px !important;
+  align-items: start !important;
+}
+
+#projects .projects-grid > .project-card {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  align-self: start !important;
+  grid-row: auto !important;
+  grid-column: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  break-inside: auto;
+}
+
+@media (max-width: 720px) {
+  #projects .projects-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    max-width: 610px;
+    margin-inline: auto;
+  }
+}
