@@ -121,3 +121,22 @@
     margin-inline: auto;
   }
 }
+
+/* GLPI: Improve project screenshot framing */
+#projects .project-card:nth-child(2) .project-image img {
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Network Labs: Move illustration note away from labels */
+#projects .project-card:nth-child(4) .illustration-note {
+  top: 12px;
+  bottom: auto;
+  left: 12px;
+  max-width: calc(100% - 24px);
+  background: rgba(8, 23, 34, 0.88);
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 10px;
+}
+
